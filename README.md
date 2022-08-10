@@ -2,6 +2,24 @@
 
 Taller de Microfrontend para el evento [Biznagafest](https://devfest.gdgmalaga.dev/) 2022.
 
+## Que pondremos
+
+- Tipos de microfrontends
+  - Iframe
+  - Angular Applications
+  - Angular Element
+  - Por CDN
+  - Por packaje.json
+  - Module Federation
+
+Ejemplo de despliegue con Travis
+¿Poner diferentes tipos de despliegues?
+
+Hacer PPT
+
+- basada en mi anterior charla de microfrontend
+- poner otros casos que no usaremos
+
 ## Technical
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
