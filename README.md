@@ -7,7 +7,7 @@ Taller de Microfrontend para el evento [Biznagafest](https://devfest.gdgmalaga.d
 - Tipos de microfrontends
   - Iframe
   - Angular Applications
-  - Angular Element
+  - Angular Element, con módulo o standalone components?
   - Por CDN
   - Por packaje.json
   - Module Federation
@@ -19,6 +19,43 @@ Hacer PPT
 
 - basada en mi anterior charla de microfrontend
 - poner otros casos que no usaremos
+
+## Consejos
+
+Para crear un nuevo módulo usar:
+
+´ng new iframe --routing --prefix=micro´
+
+## Pasos
+
+- Creamos proyecto angular
+
+- Instalamos [compodoc](https://compodoc.app/): ´ng add @compodoc/compodoc´
+Este nos creará el archivo tsconfig.doc.json.
+Ejecutamos el comando
+Añadimos a gitignore, que no coja documentación
+
+- Creamos un modulo de ejemplo sin lazy loading
+
+- Creamos el proyecto de iframe, y explicamos
+
+## Secciones
+
+Para las secciones, las iremos conectando con lazy loading, para aislar mejor las diferentes aplicaciones.
+
+### Iframe
+
+Las ventajas que nos proporcionaría el Iframe, es que podremos conectar tanto aplicaciones nuevas y antiguas, con independencia
+de las versiones y el tipo de librería y/o framework que tuviese.
+
+Esta solución, aunque era la usada mayoritariamente antes del 2017, actualmente suele estar desaconsejada en la mayoría de los casos.
+
+## [Compodoc](https://compodoc.app/)
+
+Una vez instalada la dependencia, podremos ejectuar los comandos:
+`npm run compodoc: build` Con este comando, generaríamos la documentación
+
+`npm run compodoc:serve` Con este comando, levantaremos el servidor, para ver la documentación.
 
 ## Technical
 
