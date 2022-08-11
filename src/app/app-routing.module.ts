@@ -4,12 +4,16 @@ import { SinLazyLoadingComponent } from './modules/sin-lazy-loading/sin-lazy-loa
 
 const routes: Routes = [
   {
+    path: 'sin-lazy',
+    component: SinLazyLoadingComponent
+  },
+  {
     path: 'iframe',
     loadChildren: () => import('./modules/micro-iframe/micro-iframe.module').then(m => m.MicroIframeModule)
   },
   {
-    path: 'sin-lazy',
-    component: SinLazyLoadingComponent
+    path: 'pokemon',
+    loadChildren: () => import('../../projects/pokemon/src/app/pokemon.module').then(m => m.PokemonModule)
   },
   {
     path: '',

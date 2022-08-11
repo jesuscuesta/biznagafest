@@ -40,6 +40,10 @@ Añadimos a gitignore, que no coja documentación
 - Creamos el proyecto de iframe, y explicamos ==> hecho
 
 - Creamos un proyecto de angular application sin lazy loading
+`ng g app pokemon --routing --prefix=micro`
+Le creamos un componente, para añadirle routing
+`ng g c shared/charmander --project=pokemon`
+Lo enlazamos con el routing y lazy loading
 
 - Creamos proyecto de angular application con lazy loading
 

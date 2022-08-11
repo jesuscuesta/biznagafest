@@ -9,7 +9,9 @@
     "test": "ng test",
     "compodoc:build": "compodoc -p tsconfig.doc.json",
     "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
-    "compodoc:serve": "compodoc -s"
+    "compodoc:serve": "compodoc -s",
+    "start:pokemon": "ng serve pokemon",
+    "build:pokemon": "ng build pokemon"
   },
   "private": true,
   "dependencies": {
