@@ -35,9 +35,21 @@ Este nos creará el archivo tsconfig.doc.json.
 Ejecutamos el comando
 Añadimos a gitignore, que no coja documentación
 
-- Creamos un modulo de ejemplo sin lazy loading
+- Creamos un modulo de ejemplo sin lazy loading ==> hecho
 
-- Creamos el proyecto de iframe, y explicamos
+- Creamos el proyecto de iframe, y explicamos ==> hecho
+
+- Creamos un proyecto de angular application sin lazy loading
+
+- Creamos proyecto de angular application con lazy loading
+
+- Creamos proyecto angular application, lazy loading y .submodules
+
+- Derivar a angular element al otro proyecto
+
+- Añadir configuración module federation proyecto angular
+
+- Añadir proyecto otra tecnología
 
 ## Secciones
 
