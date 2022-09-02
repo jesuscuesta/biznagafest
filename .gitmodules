@@ -1,0 +1,3 @@
+[submodule "projects/digimon"]
+	path = projects/digimon
+	url = https://github.com/jesuscuesta/biznaga-digimon.git

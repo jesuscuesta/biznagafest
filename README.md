@@ -35,25 +35,62 @@ Este nos creará el archivo tsconfig.doc.json.
 Ejecutamos el comando
 Añadimos a gitignore, que no coja documentación
 
-- Creamos un modulo de ejemplo sin lazy loading ==> hecho
+## Módulo
 
-- Creamos el proyecto de iframe, y explicamos ==> hecho
+- Creamos un modulo de ejemplo sin lazy loading
 
-- Creamos un proyecto de angular application sin lazy loading
+## Iframe
+
+- Creamos el proyecto de iframe, y explicamos
+
+## Angular Application básico
+
+- Creamos un proyecto de angular application con lazy loading
 `ng g app pokemon --routing --prefix=micro`
 Le creamos un componente, para añadirle routing
 `ng g c shared/charmander --project=pokemon`
 Lo enlazamos con el routing y lazy loading
 
-- Creamos proyecto de angular application con lazy loading
+## Submodules
 
 - Creamos proyecto angular application, lazy loading y .submodules
+Necesitamos crear primero otra application en nuestro proyecto
+`ng g app digimon --routing --prefix=micro`
+Creamos un componente, para añadir routing con contenido
+`ng g c shared/agumon --project=digimon`
+Añadimos la configuración de routing
+Añadimos los comandos al package.json
+
+
+- Creamos un nuevo repositorio
+- Movemos el proyecto
+- Lo metemos en una carpeta projects
+- Añadimos un submodulo clonando el proyecto
+`git submodule add -b master https://github.com/jesuscuesta/biznaga-digimon.git`
+
+Otros comandos de .submodules
+pull all changes in the repo including changes in the submodules
+`git pull --recurse-submodules`
+
+pull all changes for the submodules
+`git submodule update --remote`
+
+- Inicializamos el submodule
+git submodule init
+Posteriormente nos llevamos el contenido a un nuevo repositorio
+Utilizamos la funcionalidad de .submodules, para añadir el contenido y la versión
+PONER LOS COMANDOS Y DEL GIT
+
+SIGUIENTES PASOS MODULE FEDERATION
 
 - Derivar a angular element al otro proyecto
 
 - Añadir configuración module federation proyecto angular
 
 - Añadir proyecto otra tecnología
+
+## Module federation
+
 
 ## Secciones
 
