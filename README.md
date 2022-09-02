@@ -39,15 +39,28 @@ Añadimos a gitignore, que no coja documentación
 
 - Creamos el proyecto de iframe, y explicamos ==> hecho
 
-- Creamos un proyecto de angular application sin lazy loading
+- Creamos un proyecto de angular application con lazy loading
 `ng g app pokemon --routing --prefix=micro`
 Le creamos un componente, para añadirle routing
 `ng g c shared/charmander --project=pokemon`
 Lo enlazamos con el routing y lazy loading
 
-- Creamos proyecto de angular application con lazy loading
+REVISAR EL DESPLIEGUE DISTRIBUIDO, MIRAR LO DE BROWSER MODULE, PARA NO TENER QUE BORRARLO, CAMBIAR LA CONFIGURACIÓN DE APP.MODULE
 
 - Creamos proyecto angular application, lazy loading y .submodules
+Necesitamos crear primero otra application en nuestro proyecto
+`ng g app digimon --routing --prefix=micro`
+Creamos un componente, para añadir routing con contenido
+`ng g c shared/agumon --project=digimon`
+Añadimos la configuración de routing
+Añadimos los comandos al package.json
+
+MIRAR OPCIONES SUBMODULES
+Posteriormente nos llevamos el contenido a un nuevo repositorio
+Utilizamos la funcionalidad de .submodules, para añadir el contenido y la versión
+PONER LOS COMANDOS Y DEL GIT
+
+SIGUIENTES PASOS MODULE FEDERATION
 
 - Derivar a angular element al otro proyecto
 
